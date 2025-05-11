@@ -3,7 +3,7 @@
 This is a simple Node.js tool for CPU-based bruteforce search of Bitcoin and Ethereum addresses.
 
 ## Structure
-
+```
 bitcoin cpu bruteforce/\
 ├── main/\
 │   ├── index.js           # main bruteforce script\
@@ -12,7 +12,7 @@ bitcoin cpu bruteforce/\
 │   ├── test_run.js        # simplified version for testing\
 │   ├── test_target.txt    # test target addresses\
 ├── output.txt             # automatically generated results\
-
+```
 ## How it works
 
 This script performs a **partial key brute-force attack**, a common tactic used in Bitcoin puzzle challenges.
