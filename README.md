@@ -4,14 +4,14 @@ This is a simple Node.js tool for CPU-based bruteforce search of Bitcoin and Eth
 
 ## Structure
 
-bitcoin-cpu-bruteforce/\
+bitcoin cpu bruteforce/\
 ├── main/\
-│ ├── index.js # main bruteforce script\
-│ ├── target.txt # target addresses (Bitcoin or Ethereum)\
+│   ├── index.js           # main bruteforce script\
+│   ├── target.txt         # target addresses (Bitcoin or Ethereum)\
 ├── test-run/\
-│ ├── test_run.js # simplified version for testing\
-│ ├── test_target.txt # test target addresses\
-├── output.txt # automatically generated results\
+│   ├── test_run.js        # simplified version for testing\
+│   ├── test_target.txt    # test target addresses\
+├── output.txt             # automatically generated results\
 
 ## How it works
 
