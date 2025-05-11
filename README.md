@@ -39,9 +39,9 @@ Navigate to the directory and run:
 node index.js
 ```
 For testing with a smaller set:
-
-node test-run/test_run.js
-
+```bash
+node test_run.js
+```
 ## Requirements
 
 - Node.js v22
