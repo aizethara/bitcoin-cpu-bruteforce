@@ -34,11 +34,11 @@ This partial-key strategy drastically reduces the brute-force search space from 
 
 ## Usage
 
-Navigate to the directory and run:
+Run the script from the root directory using:
 ```bash
 node index.js
 ```
-For testing with a smaller set:
+To run a simplified test version:
 ```bash
 node test_run.js
 ```
