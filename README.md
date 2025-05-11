@@ -15,9 +15,23 @@ bitcoin cpu bruteforce/
 
 ## How it works
 
-The script generates random private keys, derives their public addresses, and checks if they match any in the `target.txt` or `test_target.txt` files.
+This script performs a **partial key brute-force attack**, a common tactic used in Bitcoin puzzle challenges.
+
+It works by:
+- Randomly generating a **120-bit prefix** (30 bytes),
+- Then **exhaustively iterating** over all possible **16-bit suffixes** (`0000` to `ffff`),
+- Combining them to form a full **256-bit private key**.
+
+For each generated key, it derives:
+- Bitcoin addresses: P2PKH, P2SH, Bech32 (P2WPKH, nested), Taproot
+- Ethereum addresses (from both compressed and uncompressed public keys)
+
+Each address is then compared against the entries in `target.txt` or `test_target.txt`.
 
 If a match is found, the private key and address are saved to `output.txt`.
+
+This partial-key strategy drastically reduces the brute-force search space from `2^256` to `2^16` per random prefix, making it feasible to test billions of keys efficiently.
+
 
 ## Usage
 
