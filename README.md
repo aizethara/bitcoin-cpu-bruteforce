@@ -35,10 +35,9 @@ This partial-key strategy drastically reduces the brute-force search space from 
 ## Usage
 
 Navigate to the directory and run:
-
-node main/index.js
-
-
+```bash
+node index.js
+```
 For testing with a smaller set:
 
 node test-run/test_run.js
@@ -50,7 +49,6 @@ node test-run/test_run.js
 ```bash
 npm install bitcoinjs-lib tiny-secp256k1 secp256k1 bech32 bs58check ethereum-cryptography
 ```
-
 ## Notes
 
 - All results are saved in `output.txt` (in the root folder).
