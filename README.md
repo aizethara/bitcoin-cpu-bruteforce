@@ -6,12 +6,12 @@ This is a simple Node.js tool for CPU-based bruteforce search of Bitcoin and Eth
 
 bitcoin cpu bruteforce/
 ├── main/
-│ ├── index.js # main bruteforce script
-│ ├── target.txt # target addresses (Bitcoin or Ethereum)
+│   ├── index.js           # main bruteforce script
+│   ├── target.txt         # target addresses (Bitcoin or Ethereum)
 ├── test-run/
-│ ├── test_run.js # simplified version for testing
-│ ├── test_target.txt # test target addresses
-├── output.txt # automatically generated results
+│   ├── test_run.js        # simplified version for testing
+│   ├── test_target.txt    # test target addresses
+├── output.txt             # automatically generated results
 
 ## How it works
 
@@ -60,5 +60,5 @@ npm install bitcoinjs-lib tiny-secp256k1 secp256k1 bech32 bs58check ethereum-cry
 
 ---
 
-This project is for educational and research purposes only.
+This project is for educational and research purposes only.  
 The author does not condone any illegal use, including unauthorized access to third-party wallets.
